@@ -8,7 +8,7 @@ public class zavd1 {
     zavd1 () {
         System.out.println();
         System.out.println();
-        System.out.println("Перше завдання:");
+        System.out.println("ЗАВДАННЯ №1:");
         System.out.println();
 
         while (true) {

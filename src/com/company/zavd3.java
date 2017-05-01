@@ -5,8 +5,11 @@ import java.util.Scanner;
 
 public class zavd3 {
     zavd3()
-
     {
+        System.out.println();
+        System.out.println();
+        System.out.println("ЗАВДАННЯ №3:");
+        System.out.println();
         int b = 0;
         String str;
         char arr[];

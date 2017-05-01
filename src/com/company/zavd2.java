@@ -10,7 +10,7 @@ public class zavd2 {
     zavd2() {
         System.out.println();
         System.out.println();
-        System.out.println("Друге завдання:");
+        System.out.println("ЗАВДАННЯ №2");
         System.out.println();
         int i = 0;
 
