@@ -2,15 +2,13 @@ package com.company;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 import static java.lang.Math.*;
-/**
- * Created by НАСТЯ on 27.04.2017.
- */
+
 public class zavd1 {
     private double a=0, b=0, x=0, y=0, z=0;
     zavd1 () {
         System.out.println();
         System.out.println();
-        System.out.println("Завдання №1:");
+        System.out.println("Перше завдання:");
         System.out.println();
 
         while (true) {
@@ -25,39 +23,39 @@ public class zavd1 {
                 x = in.nextDouble();
                 break;
             }
-            catch (InputMismatchException exception)
+            catch (InputMismatchException e)
             {
-                System.out.println("ПОМИЛКА. Неправильне ведення!");
+                System.out.println("Неправильно! Неправильне ведення!");
                 continue;
             }
         }
 
-        F1();
-        F2();
-        System.out.println("z = " + z);
-        System.out.println("y = " + y);
+        Zf();
+        Yf();
+        System.out.println("Z = " + z);
+        System.out.println("Y = " + y);
 
     }
 
-    private void F1 () {
+    private void Zf () {
         if (a < b) {
-            z = pow((sin(a)),2)+pow(abs(x),0.5)-1.9*a;
+            z = pow((sin(a)),2.0)+pow(abs(x),0.5)-1.9*a;
         }
         else {
-            z = pow((sin(a)),2)+pow(abs(x),0.5)-1.9*b;
+            z = pow((sin(a)),2.0)+pow(abs(x),0.5)-1.9*b;
         }
     }
 
-    private void F2 () {
-        if (z> pow(b,3)) {
-            y = (2*z-5)/pow(a, 2);
+    private void Yf () {
+        if (z> pow(b,3.0)) {
+            y = (2.0*z-5.0)/pow(a, 2.0);
         }
         else
-        if (z == pow(b,3)){
-            y = (pow((sin(a)),4)+b)/(log(abs(x)));
+        if (z == pow(b,3.0)){
+            y = (pow((sin(a)),4.0)+b)/(log(abs(x)));
         }
         else
-        if (z< pow(b,3)) {
+        if (z< pow(b,3.0)) {
             y = log(x/z);
         }
     }
